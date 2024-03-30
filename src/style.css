@@ -1,6 +1,6 @@
 :root {
   --light-color: #fdba74;
-  --lighter-color: #fed7aa;
+  --lighter-color: #fff7ed;
   --dark-color: #1e3a8a;
 }
 
@@ -23,16 +23,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  margin-block: 0.7rem;
+  margin-block: 0.5rem;
 }
 
 .header-title {
   color: var(--light-color);
-  margin-left: 0.5rem;
+  margin-inline: 1rem;
   font-family: quiche-stencil, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 3rem;
+}
+
+.header-title:hover {
+  cursor: pointer;
 }
 
 .logo {
@@ -44,6 +48,7 @@ header {
   display: flex;
   justify-content: end;
   gap: 1rem;
+  margin-top: 1rem;
   margin-inline: 1rem;
 }
 
@@ -70,10 +75,11 @@ button:hover {
 }
 
 section {
+  margin-top: 2rem;
   height: 75dvh;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   color: var(--lighter-color);
 }
 
@@ -94,6 +100,7 @@ section {
 
 .main-wrapper {
   background-color: var(--dark-color);
+  align-self: flex-end;
   padding: 0.5rem;
   padding-inline: 1rem;
   border-radius: 0.5rem;
@@ -111,4 +118,5 @@ section {
 .about {
   width: 20rem;
   font-size: 1.3rem;
+  line-height: 1.2;
 }
