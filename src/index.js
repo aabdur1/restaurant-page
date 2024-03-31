@@ -46,4 +46,9 @@ menuBtn.addEventListener("click", function () {
 aboutBtn.addEventListener("click", function () {
   document.body.lastElementChild.remove();
   document.body.appendChild(about());
+  const viewFullMenu = document.querySelector(".home-view-menu");
+  viewFullMenu.addEventListener("click", function () {
+    document.body.lastElementChild.remove();
+    document.body.appendChild(menu());
+  });
 });

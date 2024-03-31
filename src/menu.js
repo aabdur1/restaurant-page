@@ -95,7 +95,7 @@ function menu() {
       alt: "Berry Bliss Paws",
       label: "Berry Bliss Paws",
       description:
-        "Dive into the essence of summer with our Berry Bliss Paws, a delicate pastry brimming with a juicy mix of the season's finest berries. Topped with a sweet glaze and a dusting of sugar, this fruity creation is a vibrant tribute to the sun-drenched orchards that inspired Pablo. Perfect for a light, refreshing treat.",
+        "A delicate pastry brimming with a juicy mix of the season's finest berries. Topped with a sweet glaze and a dusting of sugar, this fruity creation is a vibrant tribute to the sun-drenched orchards that inspired Pablo.",
     },
   ];
 

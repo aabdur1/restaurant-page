@@ -64,6 +64,21 @@ function about() {
   hoursMon.textContent = "* Closed on Mondays";
   hoursWrapper.appendChild(hoursMon);
 
+  const location1 = document.createElement("p");
+  location1.classList.add("location1");
+  location1.textContent = "43 Whisker Way";
+  hoursWrapper.appendChild(location1);
+
+  const location2 = document.createElement("p");
+  location2.classList.add("location2");
+  location2.textContent = "Meowdor, Catatonia 60607";
+  hoursWrapper.appendChild(location2);
+
+  const viewMenu = document.createElement("p");
+  viewMenu.classList.add("home-view-menu");
+  viewMenu.textContent = "View full menu →";
+  hoursWrapper.appendChild(viewMenu);
+
   // Disclaimer
   const disclaimerWrapper = document.createElement("div");
   disclaimerWrapper.classList.add("disclaimer-wrapper");
