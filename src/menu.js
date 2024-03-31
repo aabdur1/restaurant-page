@@ -1,7 +1,11 @@
+import MenuLeft from "./images/menu-left.png";
+import MenuRight from "./images/menu-right.png";
 import Croissant from "./images/menu/croissant.jpg";
 import Croque from "./images/menu/croque.jpg";
 import Pain from "./images/menu/pain.jpg";
 import Mont from "./images/menu/mont.jpg";
+import Danish from "./images/menu/danish.jpg";
+import Pastry from "./images/menu/pastry.jpg";
 
 function createMenuItem(imageSrc, altText, label, description) {
   const menuItem = document.createElement("div");
@@ -34,9 +38,20 @@ function menu() {
   const menu = document.createElement("div");
   menu.classList.add("menu-wrapper");
 
-  const menuTitle = document.createElement("h1");
+  const menuTitle = document.createElement("div");
   menuTitle.classList.add("menu-title");
-  menuTitle.textContent = "Our signature pastries:";
+  const menuLeft = document.createElement("img");
+  menuLeft.src = MenuLeft;
+  menuLeft.classList.add("menu-title-decoration");
+  menuTitle.appendChild(menuLeft);
+  const menuTitleText = document.createElement("h1");
+  menuTitleText.classList.add("menu-title-text");
+  menuTitleText.textContent = "Our signature pastries";
+  menuTitle.appendChild(menuTitleText);
+  const menuRight = document.createElement("img");
+  menuRight.src = MenuRight;
+  menuRight.classList.add("menu-title-decoration");
+  menuTitle.appendChild(menuRight);
   menu.appendChild(menuTitle);
 
   const items = [
@@ -67,6 +82,20 @@ function menu() {
       label: "Apple Jam Mont Blanc Claw",
       description:
         "A delectable pastry inspired by the classic Mont Blanc, featuring sweet apple jam, creamy chestnut purée, and a delicate whipped cream topping, crafted to resemble a cat’s claw.",
+    },
+    {
+      image: Danish,
+      alt: "Spinach Feta Whisker Danish",
+      label: "Spinach Feta Whisker Danish",
+      description:
+        "A savory delight, combining fresh spinach and creamy feta cheese in a flaky, buttery pastry",
+    },
+    {
+      image: Pastry,
+      alt: "Berry Bliss Paws",
+      label: "Berry Bliss Paws",
+      description:
+        "Dive into the essence of summer with our Berry Bliss Paws, a delicate pastry brimming with a juicy mix of the season's finest berries. Topped with a sweet glaze and a dusting of sugar, this fruity creation is a vibrant tribute to the sun-drenched orchards that inspired Pablo. Perfect for a light, refreshing treat.",
     },
   ];
 

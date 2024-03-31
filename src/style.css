@@ -21,9 +21,14 @@ body {
 header {
   width: 100dvw;
   display: flex;
-  justify-content: space-between;
-  align-items: start;
-  margin-block: 0.5rem;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.header-title-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .header-title {
@@ -40,9 +45,14 @@ header {
   cursor: pointer;
 }
 
+.header-flag {
+  width: 3rem;
+  height: 2rem;
+}
+
 .logo {
-  width: 10rem;
-  height: 4rem;
+  width: 5rem;
+  height: 2rem;
 }
 
 .header-nav {
@@ -94,17 +104,17 @@ button:hover {
 
 .dough-img {
   width: 15rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 
 .oven-img {
   width: 15rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 
 .croissant-img {
   width: 25rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   grid-column: 2;
   grid-row: 1/3;
 }
@@ -132,14 +142,15 @@ button:hover {
 }
 
 .home-text-decoration {
-  width: 15rem;
+  width: 9rem;
   align-self: center;
   margin-block: 1rem;
 }
 
 .home-view-menu {
   color: var(--light-color);
-  margin-top: 5rem;
+  margin-top: 8rem;
+  font-size: 1.3rem;
 }
 
 .home-view-menu:hover {
@@ -152,7 +163,7 @@ button:hover {
 .menu-wrapper {
   width: 100dvw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 0.5fr));
   justify-items: center;
   margin-top: 3rem;
   gap: 3rem;
@@ -161,7 +172,15 @@ button:hover {
 .menu-title {
   color: var(--light-color);
   justify-self: center;
-  grid-column: 1 / 3;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.menu-title-decoration {
+  width: 8rem;
 }
 
 .menu-item {

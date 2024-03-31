@@ -1,12 +1,21 @@
 import Logo from "./images/logo.png";
+import Flag from "./images/flag.png";
 
 function header() {
   const header = document.createElement("header");
   header.classList.add("header");
+  const headerTitleWrapper = document.createElement("div");
+  headerTitleWrapper.classList.add("header-title-wrapper");
+  header.appendChild(headerTitleWrapper);
   const headerTitle = document.createElement("h1");
   headerTitle.classList.add("header-title");
   headerTitle.textContent = "Pablo's Patisserie";
-  header.appendChild(headerTitle);
+  headerTitleWrapper.appendChild(headerTitle);
+  const flag = document.createElement("img");
+  flag.src = Flag;
+  flag.alt = "Flag of France";
+  flag.classList.add("header-flag");
+  headerTitleWrapper.appendChild(flag);
   const logo = document.createElement("img");
   logo.src = Logo;
   logo.alt = "Logo";
