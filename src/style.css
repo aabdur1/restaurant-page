@@ -1,6 +1,6 @@
 :root {
   --light-color: #fdba74;
-  --lighter-color: #fff7ed;
+  --lighter-color: #d6d3d1;
   --dark-color: #1e3a8a;
 }
 
@@ -138,7 +138,7 @@ button:hover {
 }
 
 .home-view-menu {
-  color: var(--lighter-color);
+  color: var(--light-color);
   margin-top: 5rem;
 }
 
@@ -220,14 +220,7 @@ section {
   color: var(--light-color);
 }
 
-.main-wrapper {
-  align-self: flex-end;
-}
-
 .title {
-  font-family: quiche-stencil, sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 2rem;
   text-decoration: underline 2px solid var(--dark-color);
   color: var(--light-color);
@@ -235,7 +228,7 @@ section {
 }
 
 .about {
-  width: 20rem;
+  width: 28rem;
   font-size: 1.3rem;
   line-height: 1.2;
 }
