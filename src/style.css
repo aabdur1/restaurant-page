@@ -33,6 +33,7 @@ header {
   font-weight: 700;
   font-style: normal;
   font-size: 3rem;
+  text-decoration: underline 4px solid var(--dark-color);
 }
 
 .header-title:hover {
@@ -74,6 +75,127 @@ button:hover {
     0 12px 12px hsla(0, 0%, 100%, 0.33);
 }
 
+.home-wrapper {
+  margin-top: 5rem;
+  height: 75dvh;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.home-img-wrapper {
+  width: min-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.dough-img {
+  width: 15rem;
+  border-radius: 0.5rem;
+}
+
+.oven-img {
+  width: 15rem;
+  border-radius: 0.5rem;
+}
+
+.croissant-img {
+  width: 25rem;
+  border-radius: 0.5rem;
+  grid-column: 2;
+  grid-row: 1/3;
+}
+
+.home-title {
+  margin-top: 5rem;
+  padding-bottom: 0.5rem;
+  text-decoration: underline 2px solid var(--dark-color);
+  color: var(--light-color);
+  font-family: quiche-stencil, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.home-content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-text-content {
+  width: 30rem;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: var(--lighter-color);
+}
+
+.home-text-decoration {
+  width: 15rem;
+  align-self: center;
+  margin-block: 1rem;
+}
+
+.home-view-menu {
+  color: var(--lighter-color);
+  margin-top: 5rem;
+}
+
+.home-view-menu:hover {
+  transform: translateX(0.5rem);
+  color: var(--light-color);
+  text-decoration: underline 2px solid var(--dark-color);
+  cursor: pointer;
+}
+
+.menu-wrapper {
+  width: 100dvw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+.menu-title {
+  color: var(--light-color);
+  justify-self: center;
+  grid-column: 1 / 3;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-img {
+  width: 18rem;
+  border-radius: 1rem;
+}
+
+.menu-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.menu-label {
+  color: var(--light-color);
+  font-family: quiche-stencil, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-decoration: underline 2px solid var(--dark-color);
+}
+
+.menu-description {
+  color: var(--lighter-color);
+  width: 20rem;
+  line-height: 1.2;
+}
+
 section {
   margin-top: 2rem;
   height: 75dvh;
@@ -95,15 +217,11 @@ section {
 }
 
 .pablo-img-label {
-  color: #fed7aa;
+  color: var(--light-color);
 }
 
 .main-wrapper {
-  background-color: var(--dark-color);
   align-self: flex-end;
-  padding: 0.5rem;
-  padding-inline: 1rem;
-  border-radius: 0.5rem;
 }
 
 .title {
@@ -111,6 +229,7 @@ section {
   font-weight: 700;
   font-style: normal;
   font-size: 2rem;
+  text-decoration: underline 2px solid var(--dark-color);
   color: var(--light-color);
   padding-bottom: 0.5rem;
 }

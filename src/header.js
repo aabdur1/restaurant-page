@@ -17,14 +17,17 @@ function header() {
   header.appendChild(nav);
   const homeBtn = document.createElement("button");
   homeBtn.classList.add("nav-btn");
+  homeBtn.classList.add("home-btn");
   homeBtn.textContent = "Home";
   nav.appendChild(homeBtn);
   const menuBtn = document.createElement("button");
   menuBtn.classList.add("nav-btn");
+  menuBtn.classList.add("menu-btn");
   menuBtn.textContent = "Menu";
   nav.appendChild(menuBtn);
   const aboutBtn = document.createElement("button");
   aboutBtn.classList.add("nav-btn");
+  aboutBtn.classList.add("about-btn");
   aboutBtn.textContent = "About us";
   nav.appendChild(aboutBtn);
   return header;
