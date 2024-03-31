@@ -162,8 +162,9 @@ button:hover {
 
 .menu-wrapper {
   width: 100dvw;
+  justify-content: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 0.5fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 0.4fr));
   justify-items: center;
   margin-top: 3rem;
   gap: 3rem;
@@ -176,6 +177,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0.5rem;
   gap: 3rem;
 }
 
@@ -187,10 +189,11 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-inline: 2rem;
 }
 
 .menu-img {
-  width: 18rem;
+  width: 15rem;
   border-radius: 1rem;
 }
 
@@ -211,8 +214,15 @@ button:hover {
 
 .menu-description {
   color: var(--lighter-color);
-  width: 20rem;
+  /* width: 20rem; */
   line-height: 1.2;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
 section {
@@ -233,6 +243,7 @@ section {
 
 .pabloImg {
   width: 25rem;
+  margin-inline: 2rem;
 }
 
 .pablo-img-label {
@@ -249,5 +260,47 @@ section {
 .about {
   width: 28rem;
   font-size: 1.3rem;
-  line-height: 1.2;
+  line-height: 1.5;
+}
+
+.hours-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.hours-header {
+  color: var(--light-color);
+  text-decoration: underline 2px solid var(--dark-color);
+  font-size: 2rem;
+}
+
+.hours {
+  color: var(--lighter-color);
+  font-size: 1.2rem;
+}
+
+.disclaimer-wrapper {
+  grid-column: 1 / 3;
+  line-height: 1.5;
+  margin-block: 2rem;
+}
+
+.disclaimer-title {
+  justify-self: center;
+  color: var(--light-color);
+  text-decoration: underline 2px solid var(--dark-color);
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.disclaimer-text {
+  color: var(--lighter-color);
+  font-size: 1rem;
+  width: 50rem;
+  margin: 1rem;
 }
