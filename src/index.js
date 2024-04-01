@@ -11,7 +11,7 @@ const homeBtn = document.querySelector(".home-btn");
 const menuBtn = document.querySelector(".menu-btn");
 const aboutBtn = document.querySelector(".about-btn");
 
-const title = document.querySelector(".header-title");
+const title = document.querySelector(".header-title-wrapper");
 title.addEventListener("click", function () {
   document.body.lastElementChild.remove();
   document.body.appendChild(home());
