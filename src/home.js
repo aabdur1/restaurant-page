@@ -27,6 +27,20 @@ function home() {
   const homeText = document.createElement("div");
   homeText.classList.add("home-content-wrapper");
   homeWrapper.appendChild(homeText);
+
+  const homeLocationWrapper = document.createElement("div");
+  homeLocationWrapper.classList.add("home-location-wrapper");
+  homeText.appendChild(homeLocationWrapper);
+  const location1 = document.createElement("p");
+  location1.classList.add("home-location1");
+  location1.textContent = "43 Whisker Way";
+  homeLocationWrapper.appendChild(location1);
+
+  const location2 = document.createElement("p");
+  location2.classList.add("home-location2");
+  location2.textContent = "Meowdor, Catatonia 60607";
+  homeLocationWrapper.appendChild(location2);
+
   const homeTitle = document.createElement("h1");
   homeTitle.classList.add("home-title");
   homeTitle.textContent = "Welcome to Pablo’s Patisserie";
@@ -44,6 +58,7 @@ function home() {
   viewMenu.classList.add("home-view-menu");
   viewMenu.textContent = "View full menu →";
   homeText.appendChild(viewMenu);
+
   return homeWrapper;
 }
 

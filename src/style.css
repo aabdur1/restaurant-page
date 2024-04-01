@@ -162,11 +162,12 @@ button:hover {
   width: 9rem;
   align-self: center;
   margin-block: 1rem;
+  margin-bottom: 6rem;
 }
 
 .home-view-menu {
   color: var(--light-color);
-  margin-top: 8rem;
+  flex: 1 0 9rem;
   font-size: 1.3rem;
   transition: 500ms;
 }
@@ -176,6 +177,11 @@ button:hover {
   color: var(--light-color);
   text-decoration: underline 2px solid var(--dark-color);
   cursor: pointer;
+}
+
+.home-location-wrapper {
+  color: var(--lighter-color);
+  flex: 1;
 }
 
 .menu-wrapper {
@@ -338,6 +344,10 @@ section {
 
 .location1 {
   margin-top: 3rem;
+}
+
+.location2 {
+  margin-bottom: 6rem;
 }
 
 .disclaimer-wrapper {
