@@ -210,7 +210,19 @@ button:hover {
   margin-inline: 2rem;
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateX(-1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .menu-img {
+  animation: 1s slideIn ease-in-out forwards;
   width: 10rem;
   border-radius: 1rem;
   box-shadow: 1px 1px 1px hsla(117deg, 0%, 0%, 0.075),
@@ -241,8 +253,19 @@ button:hover {
 
 .menu-description {
   color: var(--lighter-color);
-  /* width: 20rem; */
   line-height: 1.2;
+}
+
+.menu-allergy {
+  color: var(--light-color);
+  grid-column: 1 / -1;
+  margin-block: 1rem;
+}
+
+.menu-location {
+  color: var(--lighter-color);
+  grid-column: 1 / -1;
+  margin-bottom: 2rem;
 }
 
 .about-wrapper {

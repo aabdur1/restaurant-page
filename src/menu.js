@@ -105,6 +105,17 @@ function menu() {
     );
   });
 
+  const allergy = document.createElement("p");
+  allergy.classList.add("menu-allergy");
+  allergy.textContent =
+    "Please let us know about any allergies or dietary restrictions";
+  menu.appendChild(allergy);
+
+  const location = document.createElement("p");
+  location.classList.add("menu-location");
+  location.textContent = "43 Whisker Way, Meowdor, Catatonia 60607";
+  menu.appendChild(location);
+
   return menu;
 }
 
